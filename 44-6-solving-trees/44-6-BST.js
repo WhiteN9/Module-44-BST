@@ -97,7 +97,7 @@ class BinarySearchTree {
     const queue = new Queue();
     queue.enqueue(this);
     let node = queue.dequeue();
-    if (node) {
+    while (node) {
       values.push(node.value);
 
       if (node.left) {
